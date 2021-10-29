@@ -1005,24 +1005,6 @@ footer > p{
     .heropart-2{
         display: none;
     }
-    .search-companies label{
-        width: 100%;
-    }
-    .search-companies label input[type="text"]{
-        width: 300px;
-        margin-left: -5%;
-        margin-bottom: 20px;
-    }
-    .search-companies label button{
-        display: block;
-        position: inherit;
-        margin-left: 8%;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        width: 300px;
-    }
 }
 
 @media screen and (max-width: 600px){
