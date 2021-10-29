@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlabEmo</title>
+    
+    <script src="https://use.fontawesome.com/034524055d.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="root">
+    <header id="header">
+        <h2 class="logo">BLABEMO</h2>
+        <nav class="navbar" id="navbar">
+            <i class="fa fa-times fa-2x" id="menu-exit" onclick="collapseMenu()" aria-hidden="true"></i>
+            <ul>
+                <li><a href="#">Timeline</a></li>
+                <li><a href="#">Peer Review</a></li>
+                <li><a href="#">Login</a></li>
+               <button class="signup-btn">Sign Up</button>
+            </ul>
+            
+        </nav>
+        <i class="fa fa-bars fa-2x" id="menu-enter" onclick="toggle()" aria-hidden="true"></i>
+    </header>
+    <section class="hero">
+        <div class="heropart-1">
+           <div class="search-companies">
+                <div class="header">Grow your business with real-time reviews</div>
+                <div class="para">find out more on what people are saying about your company, with real time review and data</div>
+                <label>
+                    <input type="text" placeholder="Search for Companies">
+                    <button class="btn">Search</button>
+                </label>
+                <p>Already have an account? <span style="color: #ff6634;">Sign In</span></p>
+           </div>
+            <div class="quote-container">
+                <div id="quote" class="quote first-quote">A life spent making mistakes is not only more honorable, but more useful that a life spent doing nothing</div>
+            </div>
+
+        </div>
+        <div class="heropart-2">
+            <div class="heroimage-container">
+                <img src="assets/hero.png" alt="" id="hero-img" class="hero-img">
+            </div>
+            <div class="hero-review">
+                <h1>15K</h1>
+                <p>Employee Review</p>
+            </div>
+            <div class="hero-progressbar">
+                <div class="progress">
+                    <h1>25%</h1>
+                </div>
+            </div>            
+            <div class="lines">
+                <img src="assets/svg/lines.svg" alt="">
+            </div>
+            <div class="hero-card">
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <div class="review-writeup">Great place to work with the good work culture and people skills</div>
+                <div class="reviewer">
+                    <img src="assets/employee-10.jpg" alt="">
+                    <div class="reviewer-details">
+                        <p class="reviewer-name">Anonymous</p>
+                        <p class="reviewer-job">Business Analysis</p>
+                    </div>
+                </div>
+            </div>                
+            
+        </div>
+    </section>
+    <div class="reviews">
+        <div class="review-heading">
+            <h3>Featured Review</h3>
+            <p>Here are some from the review been done by some of the employees on this platform</p>
+        </div>
+        <div class="review-grid">
+            <div class="review-card">
+                <div class="rating">
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <p>4.0</p>
+                    </span>
+                </div> 
+                <div class="review-writeup">Great place to work with the good work culture and people skills</div>               
+                <div class="review-standing">
+                    <p>sexaul assault</p>
+                    <span>
+                        <i class="fa fa-briefcase"></i>
+                        <p>Google</p>
+                    </span>
+                </div>
+                <div class="reviewer">
+                    <img src="assets/employee-1.jpg" alt="">
+                    <div class="reviewer-details">
+                        <p class="reviewer-name">Anonymous</p>
+                        <p class="reviewer-job">Business Analysis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="rating">
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                        <p>4.5</p>
+                    </span>
+                </div> 
+                <div class="review-writeup">Great place to work with the good work culture and people skills</div>               
+                <div class="review-standing">
+                    <p>nepotism</p>
+                    <span>
+                        <i class="fa fa-briefcase"></i>
+                        <p>Apple</p>
+                    </span>
+                </div>
+                <div class="reviewer">
+                    <img src="assets/employee-2.jpg" alt="">
+                    <div class="reviewer-details">
+                        <p class="reviewer-name">Anonymous</p>
+                        <p class="reviewer-job">Business Analysis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="rating">
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <p>2.0</p>
+                    </span>
+                </div> 
+                <div class="review-writeup">Great place to work with the good work culture and people skills</div>               
+                <div class="review-standing">
+                    <p>racism</p>
+                    <span>
+                        <i class="fa fa-briefcase"></i>
+                        <p>Google</p>
+                    </span>
+                </div>
+                <div class="reviewer">
+                    <img src="assets/employee-12.jpg" alt="">
+                    <div class="reviewer-details">
+                        <p class="reviewer-name">Anonymous</p>
+                        <p class="reviewer-job">Business Analysis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="rating">
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <p>4.0</p>
+                    </span>
+                </div> 
+                <div class="review-writeup">Great place to work with the good work culture and people skills</div>               
+                <div class="review-standing">
+                    <p>sexaul assault</p>
+                    <span>
+                        <i class="fa fa-briefcase"></i>
+                        <p>Starbuck</p>
+                    </span>
+                </div>
+                <div class="reviewer">
+                    <img src="assets/employee-4.jpg" alt="">
+                    <div class="reviewer-details">
+                        <p class="reviewer-name">Anonymous</p>
+                        <p class="reviewer-job">Business Analysis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="rating">
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <p>4.0</p>
+                    </span>
+                </div> 
+                <div class="review-writeup">Great place to work with the good work culture and people skills</div>               
+                <div class="review-standing">
+                    <p>racism</p>
+                    <span>
+                        <i class="fa fa-briefcase"></i>
+                        <p>Google</p>
+                    </span>
+                </div>
+                <div class="reviewer">
+                    <img src="assets/employee-13.jpg" alt="">
+                    <div class="reviewer-details">
+                        <p class="reviewer-name">Anonymous</p>
+                        <p class="reviewer-job">Business Analysis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="rating">
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <p>2.0</p>
+                    </span>
+                </div> 
+                <div class="review-writeup">Great place to work with the good work culture and people skills</div>               
+                <div class="review-standing">
+                    <p>racism</p>
+                    <span>
+                        <i class="fa fa-briefcase"></i>
+                        <p>Google</p>
+                    </span>
+                </div>
+                <div class="reviewer">
+                    <img src="assets/employee-5.jpg" alt="">
+                    <div class="reviewer-details">
+                        <p class="reviewer-name">Anonymous</p>
+                        <p class="reviewer-job">Business Analysis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousels">
+            <div class="carousel carousel-active"></div>
+            <div class="carousel carousel-latent"></div>
+            <div class="carousel carousel-latent"></div>
+        </div>
+    </div>
+    <div class="subscription">
+        <div class="email-sub">
+            <h3>Subscribe to our Newsletter</h3>
+            <div>Get latest update lorem ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here</div>
+            <label>
+                <input type="text" placeholder="Enter a valid email address">
+                <button class="btn">Submit</button>
+            </label>
+        </div>
+        <div class="sub-img" >
+            <img src="assets/svg/mail.svg" alt="">
+        </div>
+    </div>
+    <div class="companies">
+       <img src="assets/svg/partern@2x.png" alt=""> 
+    </div>
+    <div class="advert">
+        <div class="advertisements">ADVERTISEMENT</div>
+        <div class="advertisements">ADVERTISEMENT</div>
+        <div class="advertisements">ADVERTISEMENT</div>
+    </div>
+    <div class="create-account">
+        <div class="text">Get started today sign up and start reviewing business</div>
+        <div class="create-btn">
+            <button class="btn">Create free account</button>
+        </div>
+    </div>
+    <div class="footer-sect">
+        <div class="footer-sections-1">
+            <h2 class="logo" style="color: #ff6634;">BLABEMO</h2>
+            <p>This platform for minority group to express their opinon on employment, workplace experiences and rate employers</p>
+            <div class="social-icons">
+                <div>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-sections-2">
+            <div class="foot-list">
+                <p class="head-p">Company</p>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="foot-list">
+                <p class="head-p">Features</p>
+                <ul>
+                    <li><a href="#">Timeline</a></li>
+                    <li><a href="#">Peer Review</a></li>
+                    <li><a href="#">Create Account</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <p class="head-p">Contact Us</p>
+                <div>
+                    <p>inquiry@thaapp.com</p>
+                    <p>1-800-200-300</p>
+                    <p>54 Curragh birin, Castletroy, Limerick, Ireland</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Copyright 2021</p>
+    </footer>
+</div>
+</body>
+<script src="index.js"></script>
+</html>

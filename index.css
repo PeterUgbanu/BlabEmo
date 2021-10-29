@@ -1,0 +1,1153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    font-family: Montserrat; 
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    position: relative;
+    padding: 0; margin: 0;
+}
+.root{
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 100px;
+}
+header .logo{
+    color: #555;
+}
+header ul{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+header ul > *{
+    margin-right: 66px;
+}
+header ul li a{
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    line-height: 20px;
+}
+header ul .signup-btn{
+    width: 128px;
+    height: 46px;
+    background-color: #fff;
+    border: 1px solid #FF6634;
+    box-sizing: border-box;
+    border-radius: 4px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #FF6634;
+}
+.fa-2x{
+    display: none;
+    color: #555;
+}
+.hero{
+    position: relative;
+    background-color: #FFEBFF;
+    display: flex;
+    align-items: center;
+    padding: 0 100px 0 50px;
+    overflow: hidden;
+    width: 100%;
+    height: 90vh;
+}
+.heropart-1{
+    min-width: 450px;
+    position: relative;
+    top: 0;
+    left: 10%;
+    margin-right: -5%;
+}
+.search-companies{
+    position: relative;
+    top: 0;
+    left: 75px;
+    z-index: 1;
+    width: 100%;
+}
+.search-companies .header{
+    font-style: normal;
+    width: 70%;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    color: #303030;
+}
+.search-companies .para{
+    color: #747474;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 70%;
+    height: 38px;
+}
+.search-companies label{
+    position: relative;
+    width: 100%;
+}
+.search-companies label input[type="text"]{
+    position: relative;
+    border: none;
+    width: 75%;
+    height: 72px;
+    padding: 0 15px;
+    border-radius: 6px;
+    background: #FFFFFF;
+}
+.search-companies label button{
+    position: absolute;
+    top: -100%;
+    bottom: 0;
+    right: 0;
+    left: 72%;
+    padding: 0 15px;
+    letter-spacing: 1.2px;
+    border: none;
+    border-radius: 4px;
+    background: #FF6634;
+    color: #fff;
+    width: 27%;
+    height: 58px;
+}
+.search-companies label button:hover{
+    cursor: pointer;
+    border-radius: 5px;
+}
+.search-companies p{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #747474;
+}
+.heropart-2{
+    position: relative;
+    width: 50%;
+    height: 90vh;
+}
+.heropart-2 > *{
+    width: 100%;
+}
+.hero-card{
+    position: absolute;
+    bottom: -10%;
+    top: 65%;
+    left: 10%;
+    width: 250px;
+    height: 150px;
+    z-index: 1;
+    padding: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 11px 5px rgba(239, 239, 239, 0.25);
+    border-radius: 4px;
+}
+.hero-card > .rating{
+    width: 100%;
+    margin-top: 10px; margin-bottom: 10px;
+}
+.hero-card > .review-writeup{
+    font-size: 12px;
+    line-height: 15px;
+    color: #8D8D8D;
+}
+.hero-card > .reviewer{
+    width: 100%;
+    height: auto;
+}
+.lines{
+    position: relative;
+    top: -15%;
+    right: -8%;
+}
+.lines img{
+    width: 100%;
+}
+.heroimage-container{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    bottom: -10px;
+    z-index: 1;
+}
+.heroimage-container .hero-img{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.hero-review{
+    width: 86px;
+    aspect-ratio: 1;
+    box-shadow: 0px 4px 11px 5px rgba(239, 239, 239, 0.25);
+    border-radius: 6px;
+    background: #FFFFFF;
+    text-align: center;
+    position: absolute;
+    left: 83%;
+    top: 30%;
+    z-index: 1;
+}
+.hero-review h1{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 29px;
+    line-height: 35px;
+    color: #FF6634;
+}
+.hero-review p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #6C6C6C;
+}
+.hero-progressbar{
+    width: 58px;
+    height: 58px;
+    position: relative;
+    top: 25%;
+    left: 30%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 11px 5px rgba(239, 239, 239, 0.25);
+    border-radius: 6px; 
+    z-index: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.hero-progressbar .progress{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F7F7F7;
+    width: 45px;
+    height: 45px;
+    border-left: 4px solid #FF6634;
+    border-top: 4px solid #FF6634;
+    border-right: 4px solid #F7F7F7;
+    border-bottom: 4px solid #FF6634;
+    border-radius: 50%;
+}
+.hero-progressbar .progress h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+    color: #000000;
+}
+.quote-container{
+    position: relative;
+    padding:0 0 20px 0;
+    width: 350px;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.quote, .fade-in{
+    position: relative;
+    padding: 0 40px;
+    color: #8D8D8D;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+}
+.quote::before, .fade-in::before{
+    content: "\201C";
+    position: absolute;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #FF6634;
+    top: -20px;
+    left: 12px;
+}
+.quote::after, .fade-in::after{
+    content: "\201D";   
+    position: absolute;
+    position: absolute;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #FF6634;
+    bottom: -50px;
+    right: 20px;
+}
+.reviews{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px;
+    margin-top: 100px;
+}
+.review-heading{
+    text-align: center;
+    margin-bottom: 58px;
+}
+.review-heading h3{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 29px;
+    line-height: 35px;
+    color: #303030;
+    margin-bottom: 12px;
+}
+.review-heading p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8D8D8D;
+}
+.review-card{
+    width: 290px;
+    height: 225px;
+    padding: 20px;
+    background: #FBFBFB;
+    border: 1px solid #FBFBFB;
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    margin-bottom: 50px;
+}
+i{
+    color: #FF6634;
+}
+.rating p{
+    display: inline;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 13px;
+    color: #000000;
+}
+.review-writeup{
+    width: 207px;
+    height: 59px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #8D8D8D;
+    margin-top: 10px;
+}
+.review-standing{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.review-standing > p{
+    width: 84px;
+    height: 15px;
+    margin-right: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF6634;
+}
+.review-standing span{
+    display: flex;
+    align-items: center;
+}
+.review-standing span p{
+    width: 37px;
+    height: 12px;
+    display: inline;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+    margin-left: 10px;
+}
+.reviewer{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 70px;
+    background: #FCFCFC;
+    border-radius: 0px 0px 6px 6px;
+}
+.reviewer img{
+    width: 36px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.reviewer-details .reviewer-name{
+    width: 73px;
+    height: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #6C6C6C;
+}
+.reviewer-details .reviewer-job{
+    width: 97px;
+    height: 13px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    color: #BFBFBF;
+}
+.review-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    justify-content: space-evenly;
+}
+.carousels{
+    margin: 55px 0 84px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel{
+    width: 13px;
+    aspect-ratio: 1;
+    border: 2px solid #E9E9E9;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.carousel-active{
+    background: #8A8A8A;
+    border: none;
+}
+.carousel-latent:hover{
+    background: #8A8A8A;
+    border: none;
+}
+.subscription{
+    background: #F8F8F8;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 100px 140px 120px 200px;
+}
+.email-sub h3{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 29px;
+    color: #303030;
+}
+.email-sub div{
+    height: 45px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #8D8D8D;
+    margin-bottom: 40px;
+    margin-top: 12px;
+}
+.email-sub > label > input[type="text"]{
+    width: 479px;
+    height: 54px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+.email-sub > label > input[type="text"]::placeholder{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #8a8a8a;
+}
+.email-sub > label > button{
+    width: 133px;
+    height: 54px;
+    background: #FF6634;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+    border: none;
+}
+.companies{
+    width: 100%;
+    height: 133px;
+    background: #FEFEFE;
+    margin-bottom: 50px;
+}
+.companies img{
+    width: 100%;
+}
+.advert{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 30px 100px 50px 100px;
+}
+.advertisements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    background: #FBFBFB;
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #C2C2C2;
+}
+.create-account{
+    background: #FFEBFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 250px 100px 250px;
+    border: 1px solid #FFEBFF;
+    border-radius: 8px;
+    padding: 30px 75px 30px 75px;
+}
+.create-account .text{
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    color: #303030; 
+    width: 40%;  
+}
+.create-btn{
+    width: 400px;
+    height: 186px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.create-btn button{
+    width: 223px;
+    height: 54px;
+    background: #FF6634;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    line-height: 21px;
+    margin-right: 127px;
+}
+.footer-sect{
+    background: #1F2131;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    padding-top: 90px;
+    padding-right: 90px;
+    padding-bottom: 75px ;
+    padding-left: 90px;
+}
+.footer-sections-1 p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    margin-right: 250px;
+    margin-top: 40px;
+}
+.footer-sections-1 > .logo:hover{
+    border: 1px solid #8A8A8A;
+    background-color: #D6D6D6;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 8px;
+    text-align: center;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.social-icons > div{
+    width: 48px;
+    height: 48px;
+    border: 1px solid #393C4D;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.social-icons > div:hover{
+    cursor: pointer;
+    background-color: #D6D6D6;
+}
+.footer-sections-2{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+.footer-sections-2 > div{
+    margin-right:30px ;
+    width: 168px;
+}
+.footer-sections-2 .head-p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.footer-sections-2 .head-p:hover{
+    cursor: pointer;
+}
+.foot-list > ul{
+    list-style: none;
+}
+.foot-list > ul > li > a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.6);
+    padding-bottom: 10px;
+}
+.contact-info >div> p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 22px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+footer{
+    background-color: #1F2131;
+    padding-left: 90px;
+    padding-bottom: 45px;
+}
+footer > p{
+    color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    opacity: 0.4;
+}
+.btn:hover{
+    cursor: pointer;
+    color: #FF6634;
+    background-color: #fff;
+    border: 1px solid #FF6634;
+    border-radius: 5px;
+}
+
+.grid-two, .grid-three{
+    display: none;
+}
+
+
+
+
+
+.fade-in {
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+@keyframes fadeIn {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+@-moz-keyframes fadeIn {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+@-o-keyframes fadeIn {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+@-ms-keyframes fadeIn {
+  0% {opacity:1;}
+  100% {opacity:0;}
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1366px){
+    .hero{
+        padding-right: 10%;
+        padding-left: 15%;
+    }
+    .heropart-1{
+        position: relative;
+        top: 0;
+        left: -10%;
+    }
+    .search-companies > label{
+        position: relative;
+        width: 100%;
+    }
+    .search-companies label input[type="text"]{
+        position: relative;
+        border: none;
+        width: 75%;
+        height: 72px;
+    }
+    .search-companies label button{
+        position: absolute;
+        top: -100%;
+        bottom: 0;
+        right: 0;
+        left: 68%;
+        padding: 0 15px;
+        letter-spacing: 1.2px;
+        border: none;
+        border-radius: 4px;
+        background: #FF6634;
+        color: #fff;
+        width: 100px;
+        height: 58px;
+    }
+    .heropart-2{
+        width: 100%;
+    }
+    .email-sub > label > input[type="text"]{
+        width: 400px;
+        margin: 5px;
+    }
+    .subscription{
+        padding: 100px;
+    }
+    .review-card{
+        margin: 20px 10px;
+    }
+    .advertisements{
+        width: 300px;
+        margin-right: 10px;
+    }
+    .create-account{
+        width: 100%;
+        margin-left: 0;
+    }  
+    .lines{
+        position: relative;
+        top: 0;
+        right: -8%;
+        width: 100%;
+    } 
+}
+
+@media screen and (height: 1366px) {
+    .hero{
+        height: 55vh;
+    }
+    .heroimage-container{
+        height: 100%;
+    }
+    .heroimage-container .hero-img{
+        height: 65%;
+        margin-top: 50%;
+    }
+    .heroimage-container .fade-in{
+        height: 65%;
+        margin-top: 50%;
+    }
+    .lines{
+        position: relative;
+        top: 20%;
+        right: 10%;
+        width: 100%;
+    } 
+    .lines img{
+        width: 130%;
+    } 
+    .hero-progressbar{
+        top: 25%;
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    header ul > *{
+        margin-right: 40px;
+    }
+    .hero{
+        flex-wrap: wrap;
+        height: auto;
+        padding-right: 8%;
+        padding-left: 10%;
+    }
+    .heropart-1{
+        display: block;
+        margin-bottom: 15vh;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .search-companies{
+        margin: auto;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+
+    }
+    .search-companies > .header, .para{
+        margin-left: 10%;
+    }
+    .search-companies label input[type="text"]{
+        width: 80%;
+    }
+    .search-companies label button{
+        top: -105%;
+        width: 150px;
+        left: 75%;
+    }
+    .quote-container{
+        margin-left: 33%;
+    }
+    .heropart-2{
+        position: relative;
+        width: 100%;
+        height: 95vh;
+        margin-right: 10%;
+    }
+    .lines{
+        position: relative;
+        top: -13%;
+        right: -10%;
+        width: 100%;
+    }
+    .review-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        justify-content: space-evenly;
+        margin-right: -10%;
+        margin-top: -30px;
+    }
+    .review-card{
+        width: 300px;
+        margin: 20px 30px;
+    }
+    .subscription{
+        padding: 100px;
+        width: 100%;
+    }
+    .email-sub > label > button{
+        display:block;
+        width: 300px;
+        margin-left: 2%;
+    }
+    .email-sub > label > input[type="text"]{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .email-sub > label > input[type="text"]::placeholder{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        color: #8a8a8a;
+    }
+    .advert{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 500px);
+
+        margin: -50px 50px 50px 50px;
+    }
+    .advertisements{
+        width: 500px;
+        margin-bottom: 30px;
+    }
+    .create-account{
+        width: 100%;
+        margin: 0;
+    }
+    .footer-sect{
+        display: block;
+    }
+    .footer-sections-1{
+        margin-bottom: 35px ;
+    }
+    footer > p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .heropart-2{
+        display: none;
+    }
+}
+@media screen and (max-width: 970px){
+    #header{
+        width: 100%;
+    }
+    .hero{
+        padding-right: 10%;
+        padding-left: 5%;
+        width: 100%;
+    }
+    .search-companies{
+        padding-left: 5%;
+        margin-right: 10%;
+    }
+    .search-companies .header{
+        margin-left: 15%;
+    }
+    .search-companies .para{
+        margin-left: 15%;
+    }
+    .fa-bars{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }  
+    .menu{
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding-right: 50px;
+        background-color: #555;
+        height: auto;
+        padding-top: 50px;
+    }
+    .menu ul{
+        list-style: none;
+        margin-left: 70px;
+        display: block;
+    }
+    .menu ul > *{
+        margin-bottom: 50px;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .fa-times{
+        display: block;
+        color: #fff;
+        float: right;
+    }
+    .search-companies label button{
+       display: block;
+       height: 70px;
+       top: -150%;
+
+    }
+    .subscription .sub-img{
+        display: none;
+    }
+    .create-btn button{
+        width: 150px;
+        font-size: 17px;
+        line-height: 21px;
+        margin-right: 0;
+    }
+    .create-account .text{
+        width: 400px;
+    }
+    .reviews{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    footer p{
+        margin-left: -40%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #header, .hero{
+        width: 100vw;
+    }
+    #header{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .heropart-2{
+        display: none;
+    }
+    .heropart-1, .heropart-1 > *{
+        margin:30px 10px;
+    }
+    .search-companies, .search-companies > *{
+        margin-left: -12%;
+        margin-right: 10%;
+        padding-left: 10px;
+        min-width: none;
+    }
+    .search-companies .header{
+        margin-left: -8%;
+        width: 100vw;
+        padding-right: 10px;
+        font-size: 32px;
+        line-height: 30px;
+    }
+    .search-companies .para{
+        margin-left: -8%;
+        width: 100vw;
+        padding-right: 10px;
+    }
+    .search-companies label{
+        width: 100%;
+    }
+    .search-companies label input[type="text"]{
+        width: 300px;
+        margin-left: -5%;
+        margin-bottom: 20px;
+    }
+    .search-companies label button{
+        display: block;
+        position: inherit;
+        margin-left: 8%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 300px;
+    }
+
+    .review-grid{
+        grid-template-columns: 1fr;
+    }
+    .advert{
+        grid-template-rows: repeat(3, 300);
+        padding-left: 3%;
+    }
+    .advertisements{
+        width: 300px;
+    }
+    .create-account{
+        flex-wrap: wrap;
+    }
+    .create-btn{
+        width: 300px;
+        margin-left: -4%;
+    }
+    .create-btn button{
+        width: 100%;
+    }
+    .footer-sections-1 p{
+        margin-right: 10px;
+        margin-top: 40px;
+    }
+    footer{
+        width: 100%;
+    }
+    footer p{
+        margin-left: -40%;
+    }
+    .footer-sections-2{
+        flex-wrap: wrap;
+    }
+    .footer-sections-2 > *{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 400px){
+    .search-companies label input[type="text"]{
+        width: 200px;
+        margin-left: -20%;
+        margin-bottom: 10px;
+    } 
+     .search-companies label button{
+         margin-left: 15%;
+        left: -2%;
+        width: 200px;
+    } 
+}
+
+@media screen and (max-width: 350px){
+    #header{
+        width: 100%;
+    }
+    .search-companies label{
+        width: 100%;
+    }
+    .search-companies label input[type="text"]{
+        width: 200px;
+        margin-left: -30%;
+        margin-bottom: 10px;
+    }
+    .search-companies label button{
+        margin-left: 10%;
+        left: -2%;
+        width: 200px;
+    } 
+    .search-companies p{
+        margin-left: -40%;        
+    }
+    .quote-container{
+        width: 300px;
+        margin-bottom: 50px;
+    }
+    .quote::before, .fade-in::before{
+        font-size: 2em;
+    }
+    .quote::after, .fade-in::after{
+        font-size: 2em;
+    }
+    .footer-sections-2{
+        flex-wrap: wrap;
+    }
+    .footer-sections-2 > *{
+        margin-top: 20px;
+    }
+    footer{
+        width: 100%;
+    }
+    footer p{
+        margin-left: -40%;
+    }
+    .advertisements{
+        width: 200px;
+    }
+}
