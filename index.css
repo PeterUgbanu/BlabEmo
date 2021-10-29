@@ -975,8 +975,7 @@ footer > p{
     .search-companies label button{
        /* display: block; */
        height: 350%;
-       top: 0;
-        /* bottom: 20%; */
+       top: -125%;
     }
     .subscription .sub-img{
         display: none;
