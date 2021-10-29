@@ -914,8 +914,6 @@ footer > p{
     }
 }
 
-
-
 @media screen and (max-width: 970px){
     #header{
         width: 100%;
@@ -975,7 +973,7 @@ footer > p{
     .search-companies label button{
        /* display: block; */
        height: 350%;
-       top: -350%;
+       top: -150%;
     }
     .subscription .sub-img{
         display: none;
@@ -1004,6 +1002,30 @@ footer > p{
     .heropart-2{
         display: none;
     }
+}
+@media screen and (max-width: 820px) {
+.hero{
+    width: 100vw;
+}
+.search-companies label{
+    width: 100%;
+}
+.search-companies label input[type="text"]{
+    width: 300px;
+    margin-left: -5%;
+    margin-bottom: 20px;
+}
+.search-companies label button{
+    display: block;
+    position: inherit;
+    margin-left: 19vw;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 300px;
+    height: 50px;
+}
 }
 
 @media screen and (max-width: 600px){
