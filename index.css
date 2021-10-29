@@ -973,10 +973,10 @@ footer > p{
         float: right;
     }
     .search-companies label button{
-       display: block;
+       /* display: block; */
        height: 350%;
-       top: -120%;
-
+       top: 0;
+        /* bottom: 20%; */
     }
     .subscription .sub-img{
         display: none;
